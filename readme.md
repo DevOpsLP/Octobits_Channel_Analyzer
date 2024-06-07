@@ -2,6 +2,8 @@
 
 This project involves building a tool that extracts trade information from a specific Telegram channel, processes the trade data, and fetches corresponding candlestick data from the Binance API to visualize the trades on a chart. The tool includes functionalities for handling API rate limits, saving data locally, and ensuring efficient data retrieval.
 
+**This project the trades made from the very begining until the Fri Jun 07 2024 07:10:29 UTC TIME**
+
 ## Features
 
 1. **Telegram Client Initialization**: Connects to Telegram using user API credentials.
