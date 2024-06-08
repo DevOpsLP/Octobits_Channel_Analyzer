@@ -105,6 +105,8 @@ Also you need to create your OWN new channel and get the CHANNEL_ID to get the r
 - The channel identifier must be valid and accessible by the user account.
 - The script fetches and processes messages in batches to handle large volumes efficiently.
 - Ensure the `trades.json` and `candles.json` files are writable and located in the script's directory.
+- You can adjust the amount of candles displayed on the chart by changing this line:
+`candles = candles[-1000:]` change this number to plot more or less candles (-10, -20, etc...) if the num is positve it will plot from the oldest to newest, for example: `candles= candles[100]` will plot the first 100 candles (and entries)
 
 ## Example Visualization
 
