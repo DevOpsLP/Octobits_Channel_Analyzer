@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import warnings
 from urllib3.exceptions import NotOpenSSLWarning
 
@@ -20,7 +21,7 @@ TRADES_FILE = 'trades.json'
 CANDLES_FILE = 'candles.json'
 MESSAGES_FILE = 'messages.json'
 CHANNEL_IDENTIFIER = "-1001992580367"  # The channel to listen to
-TARGET_CHANNEL_IDENTIFIER = "-1001234567890"  # The channel to send messages to
+TARGET_CHANNEL_IDENTIFIER = "-1002230847160"  # The channel to send messages to
 BINANCE_API_URL = 'https://fapi.binance.com/fapi/v1/klines'
 
 def get_credentials():
@@ -288,7 +289,7 @@ def plot_candles_with_trades(candles, trades, symbol, interval):
         print("No candles to plot.")
         return
 
-    candles = candles[-1000:]
+    candles = candles[-1000:] # change this number to plot more or less candles
 
     times = [datetime.fromtimestamp(c[0] / 1000) for c in candles]
     opens = [float(c[1]) for c in candles]
